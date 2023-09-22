@@ -55,7 +55,7 @@ class EbApplnStack(Stack):
                 value=max_size
             ),
             ebs.CfnEnvironment.OptionSettingProperty(
-                namespace="aws.ec2.instances",
+                namespace="aws:ec2:instances",
                 option_name="InstanceTypes",
                 value=instance_types
             )
