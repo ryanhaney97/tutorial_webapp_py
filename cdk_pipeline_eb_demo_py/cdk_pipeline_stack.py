@@ -22,8 +22,9 @@ class CdkPipelineStack(Stack):
                                                                                  authentication=SecretValue.secrets_manager(
                                                                                      "github-oauth-token"
                                                                                  )),
-                                                install_commands=["pip install -r requirements.txt",
-                                                                  "npm install -g aws_cdk"],
+                                                install_commands=["npm install -g npm@9.8.1",
+                                                                  "pip install -r requirements.txt",
+                                                                  "npm install -g aws-cdk"],
                                                 commands=["cdk synth"]
                                                 )
                                 )
