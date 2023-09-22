@@ -4,7 +4,12 @@ __pycache__
 .pytest_cache
 .venv
 *.egg-info
+.idea
 
 # CDK asset staging directory
 .cdk.staging
 cdk.out
+!src/*
+src/package-lock.json
+src/node_modules
+.DS_STORE
